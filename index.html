@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação etária</title>
+
+</head>
+<body>
+    <h1>Classificação etária</h1>
+    <!--Receber a idade-->
+    <p>
+        <input type="Number" placeholder="Insira a idade" id="idade">
+    </p>
+    <p>
+        <button type="button" onclick="Classificar()">Classificar</button> 
+    </p>
+    <script>
+        function classificar(){
+            var idade = parseInt(document.querySelectorAll('input')[0].value);
+            var classification;
+            
+            if(idade <= 10){
+                alert('É uma criança e não está em maioridade penal')
+                
+            } else if (idade <= 11){
+                alert('É um pré adolescente e não está em maioridade penal')
+                
+            } else if (idade >= 12 && idade <= 17){
+                alert('É um adolescente e não está em maioridade penal')
+                
+            } else if(idadde >= 18 && idade <= 60){
+                alert('É uma adulto e está em maioridade penal');
+                
+            }
+        } 
+    </script>
+</body>
+</html>
